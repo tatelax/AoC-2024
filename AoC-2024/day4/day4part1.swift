@@ -5,19 +5,21 @@
 //  Created by Tate McCormick on 12/5/24.
 //
 
-let directions: [(x: Int, y: Int)] =
-[
-    (1, 0),
-    (-1, 0),
-    (0, 1),
-    (0, -1),
-    (-1, 1),
-    (1, -1),
-    (1, 1),
-    (-1, -1)
-]
+
 
 class Day4Part1 {
+    static let directions: [(x: Int, y: Int)] =
+    [
+        (1, 0),
+        (-1, 0),
+        (0, 1),
+        (0, -1),
+        (-1, 1),
+        (1, -1),
+        (1, 1),
+        (-1, -1)
+    ]
+    
     static func run() {
         var totalMatches = 0
         var input: String = ""
